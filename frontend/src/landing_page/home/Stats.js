@@ -12,7 +12,7 @@ function Stats() {
                 <div style={{margin: "2em"}}>
                     <h4>No spam or gimmicks</h4>
                     <p>
-                        No gimmicks, spam, "gamification", or annoying push notifications. High quality apps that you use at your pace, the way you like. <a href="#">Our philosophies.</a>
+                        No gimmicks, spam, "gamification", or annoying push notifications. High quality apps that you use at your pace, the way you like. <span>Our philosophies.</span>
                     </p>
                 </div>
                 <div style={{margin: "2em"}}>
@@ -24,12 +24,12 @@ function Stats() {
                 <div style={{margin: "2em"}}>
                     <h4>Do better with money</h4>
                     <p>
-                        With initiatives like <a href="#">Nudge</a> and <a href="#">Kill Switch</a>, we don't just facilitate transactions, but actively help you do better with your money.
+                        With initiatives like <span>Nudge</span> and <span>Kill Switch</span>, we don't just facilitate transactions, but actively help you do better with your money.
                     </p>
                 </div>
                 <div style={{margin: "2em"}}>
-                    <a href="#" style={{marginRight: "2em", color: "#1976d2", textDecoration: "none"}}>Explore our products &rarr;</a>
-                    <a href="#" style={{color: "#1976d2", textDecoration: "none"}}>Try Kite demo &rarr;</a>
+                    <span style={{marginRight: "2em", color: "#1976d2", textDecoration: "none"}}>Explore our products &rarr;</span>
+                    <span style={{color: "#1976d2", textDecoration: "none"}}>Try Kite demo &rarr;</span>
                 </div>
             </div>
             <div className="stats-products" style={{position: "relative", minWidth: "450px", height: "600px"}}>
