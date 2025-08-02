@@ -1,7 +1,5 @@
 import Hero from "./Hero.js"
-// import Equity from "./Equity.js";
-// import Currency from "./Currency.js";
-// import Commodity from "./Commodity.js"
+
 import Charges from "./Charges.js"
 function Pricing() {
     return (  
