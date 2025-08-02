@@ -1,0 +1,21 @@
+.hero-about{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 5em;
+}
+
+.info{
+    display: flex;
+    justify-content:center;
+    margin-top: 2em;
+}
+
+.left-para,.right-para{
+    width: 40%;
+    padding: 2em;
+    text-align: left;
+    
+}

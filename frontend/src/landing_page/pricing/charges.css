@@ -1,0 +1,30 @@
+.tabs{
+    margin:200px 200px 50px 200px;
+    display:flex;
+    gap:2em;
+}
+
+.tab{
+    cursor: pointer;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab:hover{
+    color:#387ed1;
+}
+
+.line{
+    height: 0.5px;
+    width: 70%;
+    background-color: black;
+}
+
+.tab-content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+

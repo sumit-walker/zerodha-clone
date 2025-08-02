@@ -1,0 +1,17 @@
+.award-content{
+    margin-top:5em ;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+img{
+    width: 100%;
+}
+.right-half{
+    height: 300px;
+    width:550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
