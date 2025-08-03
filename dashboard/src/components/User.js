@@ -54,7 +54,7 @@ setAnchorEl(null);
 };
 
 useEffect(()=>{
-    fetch("http://localhost:2020/me",{
+    fetch("https://zerodha-clone-9-fdhz.onrender.com/me",{
         credentials:"include"
     })
     .then((res)=>res.json())
@@ -64,12 +64,12 @@ useEffect(()=>{
 },[]);
 
 const handleLogout=async()=>{
-    await fetch("http://localhost:2020/logout",{
+    await fetch("https://zerodha-clone-9-fdhz.onrender.com/logout",{
         method:"Post",
         credentials: "include"
     });
     localStorage.removeItem("isAuthenticated");
-    window.location.href="http://localhost:3001/login"; //redirect to login page
+    window.location.href="https://zerodhaclone-1.netlify.app/login"; //redirect to login page
     toast.success("Logout successful");
     setAnchorEl(null);
 
