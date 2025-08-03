@@ -30,7 +30,7 @@ function Login() {
         
 
         try{
-            const res = await fetch("https://zerodha-clone-5-mgqb.onrender.com/login",{
+            const res = await fetch("https://localhost:3000/login",{
                 method:"POST",
                 headers:{"Content-Type": "application/json"},
                 body:JSON.stringify(userData),
