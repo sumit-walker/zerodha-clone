@@ -30,7 +30,7 @@ function Signup() {
         }
 
         try {
-            const res = await fetch("https://locahost:3000/signup", {
+            const res = await fetch("https://locahost:2020/signup", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
