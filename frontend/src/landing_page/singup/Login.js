@@ -46,7 +46,7 @@ function Login() {
                 // alert("Loginup successful!");
                 toast.success("Loginup successful!");
                 localStorage.setItem("isAuthenticated", "true");
-                window.location.href = `http://localhost:3000/dashboard/${data.user.id}`; 
+                window.location.href = `https://zerodha-clone-9-fdhz.onrender.com/dashboard/${data.user.id}`; 
             }else{
                 toast.warning(data.message|| "Login failed" );
             }
