@@ -13,7 +13,7 @@ export default function Positions() {
   const[allPositions,setAllPositions]=useState([]);
 
   useEffect(()=>{
-    axios.get("http://localhost:2020/allPositions",{withCredentials: true}).then((res)=>{
+    axios.get("https://zerodha-clone-0.onrender.com/positions/allPositions",{withCredentials: true}).then((res)=>{
       console.log(res.data);
       setAllPositions(res.data)
     });

@@ -7,7 +7,7 @@ export default function BuyActionWindow({uid, price, handleBuyWindow , openbuyWi
   const [stockPrice,setStockPrice]=useState(price)
   const [userData,setUserData] = useState({id:"",name:"",email:""});
   useEffect(()=>{
-      fetch("http://localhost:2020/me",{
+      fetch("https://zerodha-clone-0.onrender.com/me",{
           credentials:"include"
       })
       .then((res)=>res.json())
@@ -19,7 +19,7 @@ export default function BuyActionWindow({uid, price, handleBuyWindow , openbuyWi
     
 
     try{
-      const res=await fetch("http://localhost:2020/userActivities",{
+      const res=await fetch("https://zerodha-clone-0.onrender.com/userActivities",{
         method:"POST",
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify({

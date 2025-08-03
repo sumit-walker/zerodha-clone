@@ -7,7 +7,7 @@ function Analytics({openAnalytics,openbuyWindow,handleAnalytics,handleBuyWindow}
      const [allWatchlist,setAllWatchlist] = useState([]);
     
       useEffect(()=>{
-        axios.get("http://localhost:2020/allwatchlist",{withCredentials: true}).then((res)=>{
+        axios.get("https://zerodha-clone-0.onrender.com/allwatchlist",{withCredentials: true}).then((res)=>{
           console.log(res.data);
           setAllWatchlist(res.data)
         });

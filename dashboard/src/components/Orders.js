@@ -11,7 +11,7 @@ import {Link} from "react-router-dom";
 function Orders() {
     const[userId,setUserId]=useState("");
     const[allOrders,setAllOrders]=useState([]); 
-    fetch("http://localhost:2020/me",{credentials:"include"})
+    fetch("https://zerodha-clone-0.onrender.com/me",{credentials:"include"})
         .then((res)=> res.json())
         .then((data)=>{
             if(data.id) setAllOrders(data.activities)
@@ -19,7 +19,7 @@ function Orders() {
             
         })
     useEffect(()=>{
-        fetch("http://localhost:2020/me",{credentials:"include"})
+        fetch("https://zerodha-clone-0.onrender.com/me",{credentials:"include"})
         .then((res)=> res.json())
         .then((data)=>{
             if(data.id) setAllOrders(data.activities)

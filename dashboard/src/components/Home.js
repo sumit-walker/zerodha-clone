@@ -5,7 +5,7 @@ function Home() {
     const[user,setUser]=useState([]); 
        
     useEffect(()=>{
-        fetch("http://localhost:2020/me",{credentials:"include"})
+        fetch("https://zerodha-clone-0.onrender.com/me",{credentials:"include"})
         .then((res)=> res.json())
         .then((data)=>{
             if(data.id) setUser(data)

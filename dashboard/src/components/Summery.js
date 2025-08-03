@@ -6,13 +6,13 @@ function Summery({user}) {
     const [allHoldings,setAllHoldings] = useState([]);
     
       useEffect(()=>{
-        axios.get("http://localhost:2020/allHoldings",{withCredentials: true}).then((res)=>{
+        axios.get("https://zerodha-clone-0.onrender.com/holdings/allHoldings",{withCredentials: true}).then((res)=>{
           console.log(res.data);
           setAllHoldings(res.data)
         });
       },[])
       useEffect(()=>{
-          fetch("http://localhost:2020/me",{
+          fetch("https://zerodha-clone-0.onrender.com/me",{
               credentials:"include"
           })
           .then((res)=>res.json())
