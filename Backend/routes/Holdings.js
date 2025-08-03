@@ -1,4 +1,5 @@
 const express=require("express");
+const { HoldingsModel } = require("../model/HoldingsModel.js");
 const router=express.Router();
 
 router.get("/allHoldings",async(req,res)=>{

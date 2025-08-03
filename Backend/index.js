@@ -7,9 +7,7 @@ const passport=require("passport");
 const flash=require("connect-flash");// it is used to flash messages to the user
 const cors=require("cors");
 
-const {HoldingsModel}=require("./model/HoldingsModel.js")
-const {PositionsModel}=require("./model/PositionsModel.js")
-// const {OrdersModel}=require("./model/OrderModel.js")
+
 const {WatchListModel} =require("./model/WatchListModel.js")
 const User = require("./model/users.js");
 
@@ -72,15 +70,9 @@ app.use(passport.session());
 
 app.use("/", userRouter);
 
-app.get("/allHoldings",async(req,res)=>{
-    let allHolding= await HoldingsModel.find({});
-    res.json(allHolding)
-});
+app.use("/holdings",holdingsRouter);
 
-app.get("/allPositions",async(req,res)=>{
-    let allPositions= await PositionsModel.find({});
-    res.json(allPositions);
-});
+app.use("/positions",positionsRouter);
 
 
 app.get("/allwatchlist",async(req,res)=>{
