@@ -30,7 +30,7 @@ function Signup() {
         }
 
         try {
-            const res = await fetch("https://locahost:2020/signup", {
+            const res = await fetch("https://zerodha-clone-0.onrender.com/signup", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
@@ -39,7 +39,7 @@ function Signup() {
             const data = await res.json();
             if (res.ok) {
                 toast.success("Signup successful!");
-                window.location.href=`http://localhost:3001/login`; //redirect to login page
+                window.location.href=`https://zerodha-clone-0.onrender.com/login`; //redirect to login page
             } else {
                 toast.warning(data.message);
             }
