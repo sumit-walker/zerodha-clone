@@ -59,7 +59,7 @@ function Signup() {
             </Stack>
             <div className='flex gap-3'>
                 <button type="button" className="btn btn-primary"> <a href="/signup" className='text-white'>Sign up</a></button>
-                <button type="button" className="btn btn-secondary"> <a href="/login" className='text-white'>Login</a></button>  
+                <button type="button" className="btn btn-secondary"> <a href="https://zerodha-frontend-6.onrender.com//login" className='text-white'>Login</a></button>  
                               
             </div>
             <h3>Create an account</h3>
